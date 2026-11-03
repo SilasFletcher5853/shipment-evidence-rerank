@@ -1,0 +1,14 @@
+{
+  "name": "shipment-evidence-rerank",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/shipment_search.ts",
+    "test": "node --experimental-strip-types --test test/evidence_selection.test.ts",
+    "typecheck": "tsc --noEmit",
+    "demo": "node --experimental-strip-types src/dispatch_demo.ts"
+  },
+  "dependencies": {"zod": "^3.24.2"},
+  "devDependencies": {"@types/node": "^22.13.0", "typescript": "^5.8.2"}
+}
